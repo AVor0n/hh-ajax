@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>HH-AJAX-HW</title>
+    </head>
+    <body>
+        <main class="main">
+            <section class="search-section">
+                <img
+                    src="https://openlibrary.org/static/images/openlibrary-logo-tighter.svg"
+                    alt="logo"
+                />
+                <search class="search">
+                    <div class="search__input-wrapper">
+                        <input
+                            class="search__input"
+                            type="text"
+                            placeholder="Введите поисковой запрос"
+                        />
+                    </div>
+                    <ul class="search__suggestions"></ul>
+                </search>
+                <div class="details"></div>
+            </section>
+
+            <aside class="requests-history">
+                <h2 class="requests-history__title">История поиска:</h2>
+                <ul class="requests-history__list"></ul>
+            </aside>
+        </main>
+
+        <script type="module" src="./scripts/index.js"></script>
+    </body>
+</html>
